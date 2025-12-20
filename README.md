@@ -1,2 +1,2 @@
-# shopify-PBI-project.io
+# all-about-Thi.io
 Shopify Business Performance Analysis Using Power BI
