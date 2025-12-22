@@ -27,7 +27,20 @@ The purpose of this project to build a dashboard using PowerBI to deliver compre
 4. What is the long-term value of our customers, and how sustainable is our revenue base?
 5. Where can we focus efforts to increase revenue most efficiently-pricing, retention, product mix, or geographic expansion?
 
-![Shopify Sales Dashboard](PBI_Analysis.png)
+# Dataset Description
+📌 Data Source:
+## 📌 Data Source
+
+- **Source:** Google Sheets (Shopify Sales Data)  
+  https://docs.google.com/spreadsheets/d/1GeIgZ9hepgFbj4A9y8Szp9CwUPBc6RZx/edit?gid=2091921388
+- **Dataset Size:** 7,432 rows
+- **Description:** Transaction-level e-commerce data used to analyze sales performance, customer behavior, product categories, geographic trends, and payment methods.
+
+
+<img width="1380" height="807" alt="image" src="https://github.com/user-attachments/assets/0d28a534-1e06-4cba-967a-592df9a8a82b" />
+
+
+
 
 
 
