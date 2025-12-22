@@ -1,7 +1,7 @@
 #  Power BI Project – Shopify Business Performance Analysis
 - By: Thi Doan
 - Date: 10/2025
-- Tool Used: `Power Query`, `PowerBi`
+- Tool Used: `Power Query`, `DAX`, `PowerBi`
 
 # 🧾Table Of Contents (TOCs)
 1. [Background & Overview]()
@@ -28,15 +28,20 @@ The purpose of this project to build a dashboard using PowerBI to deliver compre
 5. Where can we focus efforts to increase revenue most efficiently-pricing, retention, product mix, or geographic expansion?
 
 # Dataset Description
-📌 Data Source:
+
 ## 📌 Data Source
 
 - **Source:** Google Sheets (Shopify Sales Data)  
   https://docs.google.com/spreadsheets/d/1GeIgZ9hepgFbj4A9y8Szp9CwUPBc6RZx/edit?gid=2091921388
 - **Dataset Size:** 7,432 rows
-- **Description:** Transaction-level e-commerce data used to analyze sales performance, customer behavior, product categories, geographic trends, and payment methods.
+- **Format:** xlsx 
 
-
+## Data Processing Using DAX and Power Query
+1. Using Power Query to clean and make sure dataset is ready.
+2. DAX Calculations & Formulas
+- Transactions Performance
+-- Net Sales
+-- 
 <img width="1380" height="807" alt="image" src="https://github.com/user-attachments/assets/0d28a534-1e06-4cba-967a-592df9a8a82b" />
 
 
