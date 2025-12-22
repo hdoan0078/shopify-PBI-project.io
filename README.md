@@ -1,4 +1,4 @@
-  Power BI Project – Shopify Business Performance Analysis
+#  Power BI Project – Shopify Business Performance Analysis
 - By: Thi Doan
 - Date: 10/2025
 - Tool Used: `Power Query`, `PowerBi`
@@ -7,5 +7,15 @@
 1. [Background & Overview]()
 2. [Dataset Description]()
 3. [Key Insights & Visualization]()
-4. 
 
+# 📌Background & Overview
+## Objective:
+📖What is this project about?
+The purpose of this project to build a dashboard using PowerBI to deliver comprehensive view of Shopify sales performance, customer retention, geographic demand, payment behavior, and product mix to support data-driven business decisions.
+
+📖Who is this project for? 
+- Business Analysts/ Data Analysts: Using the dashboard to monitor and report KPIS, identify trends and support data-driven recommendations.
+- E-commerce/ Operations Managers: Tracking sales performance, customer retentio, product mix, and regional demand to optimize operations and inventory.
+- Marketing & Growth Teams: Analyzing customer behavior, repeat rates, top regions, and product categories to guide campaigns and retention strategies.
+- Finance/ Revenue Teams: Monitoring net sales, AOV, LTV, and payment method mix for revenue planning and forecasting.
+- Executives/ Business Owners:  Gaining a high-level view of overall business health through executive-ready KPIs and trends. 
