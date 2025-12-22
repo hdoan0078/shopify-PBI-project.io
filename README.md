@@ -1,2 +1,5 @@
-# all-about-Thi.io
-Shopify Business Performance Analysis Using Power BI
+Power BI Project – Shopify Business Performance Analysis
+- By: Thi Doan
+- Date: 10/2025
+- Tool Used: 'Excel Power Query', 'PowerBI'
+
