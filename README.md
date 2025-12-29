@@ -50,22 +50,20 @@ The purpose of this project to build a dashboard using PowerBI to deliver compre
 - ** Net Sales**:
 ```dax
 Net Sales = sum(shopify_sales[Subtotal Price])
-
+```
 - ** Total Quantity**:
 ```dax
 Total Quantity = sum(shopify_sales[Quantity])
-
+```
 - ** Net Average Order Value**:
 ```dax
 Net Avg Order Value = AVERAGE(shopify_sales[Subtotal Price])
+```
 
 
 
 
 
-- Transactions Performance
--- Net Sales
--- 
 <img width="1380" height="807" alt="image" src="https://github.com/user-attachments/assets/0d28a534-1e06-4cba-967a-592df9a8a82b" />
 
 
