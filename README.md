@@ -39,10 +39,33 @@ The purpose of this project to build a dashboard using PowerBI to deliver compre
 ## Data Processing Using DAX and Power Query
 1. Using Power Query to clean and make sure dataset is ready.
 2. DAX Calculations & Formulas
+- `DAX formulas used for some KPIs requirement calculations`:
+<details>
+  <summary>CLICK TO VIEW</summary>
+  <br>
+1. Transaction Performance
+- ** Net Sales**:
+```dax
+Net Sales = sum(shopify_sales[Subtotal Price])
+- ** Total Quantity**:
+```dax
+Total Quantity = sum(shopify_sales[Quantity])
+- ** Net Average Order Value**:
+```dax
+Net Avg Order Value = AVERAGE(shopify_sales[Subtotal Price])
+
+
+
+
+
 - Transactions Performance
 -- Net Sales
 -- 
 <img width="1380" height="807" alt="image" src="https://github.com/user-attachments/assets/0d28a534-1e06-4cba-967a-592df9a8a82b" />
+
+
+
+
 
 
 
