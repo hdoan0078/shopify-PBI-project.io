@@ -63,43 +63,43 @@ Net Avg Order Value = AVERAGE(shopify_sales[Subtotal Price])
 2. Customer Behavior
 
 - **Total Customer**:
-  ```dax
+```dax
 Total Customer = DISTINCTCOUNT(shopify_sales[Customer Id])
-  ```
+```
 - **Single Order Customer**:
-  ``` dax
+``` dax
 Single Order Customer = 
 
         CALCULATE(COUNTROWS(VALUES(shopify_sales[Customer Id])), 
                 FILTER(VALUES(shopify_sales[Customer Id]), 
                         CALCULATE(DISTINCTCOUNT(shopify_sales[Order Number]))= 1
                 ))
-  ```
+```
 - **Repeat Customer**:
-  ```dax
+```dax
 Repeat Customer = 
 
         CALCULATE(COUNTROWS(VALUES(shopify_sales[Customer Id])),
                 FILTER(VALUES(shopify_sales[Customer Id]),
                         CALCULATE(DISTINCTCOUNT(shopify_sales[Order Number]))>1))
-  ```
+```
 
 3. Retention & Value KPIs
 
 - **Life Time Value**:
-  ```dax
+```dax
 Life Time Value = [Net Sales]/ [Total Customer]
-  ```
+```
 
 - **Repeat Rate**:
-  ```dax
+```dax
 Repeat Rate = [Repeat Customer]/[Total Customer]
-  ```
+```
 
 - **Purchase Frequency**:
-  ```dax
+```dax
 Purchase Frequency = DISTINCTCOUNT(shopify_sales[Order Number])/[Total Customer]
-  ```
+```
 
 
 
