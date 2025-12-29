@@ -22,10 +22,10 @@ The purpose of this project to build a dashboard using PowerBI to deliver compre
 
 ❓Business Questions:
 1. How is overall revenue performing, and are we on track with sales targets over time?
-2. Are we getting through repeat customers or relying primarily on new customer acquisition?
-3. Which product categories and regions are driving the majority of our revenue?
-4. What is the long-term value of our customers, and how sustainable is our revenue base?
-5. Where can we focus efforts to increase revenue most efficiently-pricing, retention, product mix, or geographic expansion?
+2. What is the most and least used payment methods?
+3. What is customer preferences across regions or campaigns?
+4. Determine which product types generate the highest revenue and order volume?
+5. How customer engagement varies across different product categories?
 
 # Dataset Description
 
@@ -45,7 +45,7 @@ The purpose of this project to build a dashboard using PowerBI to deliver compre
   
   <br>
   
-1. Transaction Performance
+**1. Transaction Performance**
 
 - **Net Sales**:
 ```dax
@@ -60,7 +60,7 @@ Total Quantity = sum(shopify_sales[Quantity])
 Net Avg Order Value = AVERAGE(shopify_sales[Subtotal Price])
 ```
 
-*2. Customer Behavior*
+**2. Customer Behavior**
 
 - **Total Customer**:
 ```dax
@@ -100,8 +100,6 @@ Repeat Rate = [Repeat Customer]/[Total Customer]
 ```dax
 Purchase Frequency = DISTINCTCOUNT(shopify_sales[Order Number])/[Total Customer]
 ```
-
-
 
 
 <img width="1380" height="807" alt="image" src="https://github.com/user-attachments/assets/0d28a534-1e06-4cba-967a-592df9a8a82b" />
