@@ -100,7 +100,7 @@ Repeat Rate = [Repeat Customer]/[Total Customer]
 ```dax
 Purchase Frequency = DISTINCTCOUNT(shopify_sales[Order Number])/[Total Customer]
 ```
-
+</details>
 
 <img width="1380" height="807" alt="image" src="https://github.com/user-attachments/assets/0d28a534-1e06-4cba-967a-592df9a8a82b" />
 
