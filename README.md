@@ -42,14 +42,19 @@ The purpose of this project to build a dashboard using PowerBI to deliver compre
 - `DAX formulas used for some KPIs requirement calculations`:
 <details>
   <summary>CLICK TO VIEW</summary>
+  
   <br>
+  
 1. Transaction Performance
+
 - ** Net Sales**:
 ```dax
 Net Sales = sum(shopify_sales[Subtotal Price])
+
 - ** Total Quantity**:
 ```dax
 Total Quantity = sum(shopify_sales[Quantity])
+
 - ** Net Average Order Value**:
 ```dax
 Net Avg Order Value = AVERAGE(shopify_sales[Subtotal Price])
