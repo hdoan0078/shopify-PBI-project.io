@@ -39,7 +39,7 @@ The purpose of this project to build a dashboard using PowerBI to deliver compre
 ## Data Processing Using DAX and Power Query
 1. Using Power Query to clean and make sure dataset is ready.
 2. DAX Calculations & Formulas
-- `DAX formulas used for some KPIs requirement calculations`:
+- **`DAX formulas used for some KPIs requirement calculations`**
 <details>
   <summary>CLICK TO VIEW</summary>
   
@@ -47,19 +47,59 @@ The purpose of this project to build a dashboard using PowerBI to deliver compre
   
 1. Transaction Performance
 
-- ** Net Sales**:
+- **Net Sales**:
 ```dax
 Net Sales = sum(shopify_sales[Subtotal Price])
 ```
-- ** Total Quantity**:
+- **Total Quantity**:
 ```dax
 Total Quantity = sum(shopify_sales[Quantity])
 ```
-- ** Net Average Order Value**:
+- **Net Average Order Value**:
 ```dax
 Net Avg Order Value = AVERAGE(shopify_sales[Subtotal Price])
 ```
 
+2. Customer Behavior
+
+- **Total Customer**:
+  ```dax
+Total Customer = DISTINCTCOUNT(shopify_sales[Customer Id])
+  ```
+- **Single Order Customer**:
+  ``` dax
+Single Order Customer = 
+
+        CALCULATE(COUNTROWS(VALUES(shopify_sales[Customer Id])), 
+                FILTER(VALUES(shopify_sales[Customer Id]), 
+                        CALCULATE(DISTINCTCOUNT(shopify_sales[Order Number]))= 1
+                ))
+  ```
+- **Repeat Customer**:
+  ```dax
+Repeat Customer = 
+
+        CALCULATE(COUNTROWS(VALUES(shopify_sales[Customer Id])),
+                FILTER(VALUES(shopify_sales[Customer Id]),
+                        CALCULATE(DISTINCTCOUNT(shopify_sales[Order Number]))>1))
+  ```
+
+3. Retention & Value KPIs
+
+- **Life Time Value**:
+  ```dax
+Life Time Value = [Net Sales]/ [Total Customer]
+  ```
+
+- **Repeat Rate**:
+  ```dax
+Repeat Rate = [Repeat Customer]/[Total Customer]
+  ```
+
+- **Purchase Frequency**:
+  ```dax
+Purchase Frequency = DISTINCTCOUNT(shopify_sales[Order Number])/[Total Customer]
+  ```
 
 
 
