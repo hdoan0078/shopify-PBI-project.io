@@ -101,13 +101,15 @@ Repeat Rate = [Repeat Customer]/[Total Customer]
 Purchase Frequency = DISTINCTCOUNT(shopify_sales[Order Number])/[Total Customer]
 ```
 </details>
+
 # 📊Key Insights & Visualizations
 ## I. Overview
 <img width="1380" height="807" alt="image" src="https://github.com/user-attachments/assets/0d28a534-1e06-4cba-967a-592df9a8a82b" />
 
+
 **From 03/18/2025 to 03/24/2025:**
-- Generated **$4.18M in net sales** from **7,534 units sold**, reflecting strong overall sales performance.
-- Achieved a **high average order value (AOV) of $562.63**, indicating customers purchase higher-value baskets.
+- Generated **$4.18M in net sales** from **7,534 units sold**.
+- Achieved a **high average order value (AOV) of $562.63**.
 - Served **4,431 customers**, with **46% repeat customers**, demonstrating solid customer retention.
 - Customer value metrics show an **LTV of $943.55** and **purchase frequency of 1.68**, highlighting meaningful long-term customer value.
 - Identified a sizable base of **single-order customers (2,392)**, representing an opportunity to increase repeat purchases and revenue efficiency.
