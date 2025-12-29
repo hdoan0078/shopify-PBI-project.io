@@ -60,7 +60,7 @@ Total Quantity = sum(shopify_sales[Quantity])
 Net Avg Order Value = AVERAGE(shopify_sales[Subtotal Price])
 ```
 
-2. Customer Behavior
+*2. Customer Behavior*
 
 - **Total Customer**:
 ```dax
@@ -84,7 +84,7 @@ Repeat Customer =
                         CALCULATE(DISTINCTCOUNT(shopify_sales[Order Number]))>1))
 ```
 
-3. Retention & Value KPIs
+**3. Retention & Value KPIs**
 
 - **Life Time Value**:
 ```dax
